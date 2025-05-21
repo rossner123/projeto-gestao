@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestão de Projetos</title>
+  <link rel="stylesheet" href="./css/projetos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <h1 class="main-title">Gestão de Projetos</h1>
+
+  <div class="container">
+    <section class="project-list">
+      <div class="project">
+        <h2>Projeto Exemplo</h2>
+        <p>Descrição resumida do projeto.</p>
+        <p><strong>Prazo:</strong> 25/06/2025</p>
+        <div class="actions">
+          <button class="edit-btn"><i class="fas fa-pen"></i> Editar</button>
+          <button class="delete-btn"><i class="fas fa-trash"></i> Excluir</button>
+        </div>
+      </div>
+    </section>
+
+    <form class="new-project-form">
+      <h2>Novo Projeto</h2>
+
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" placeholder="Digite o título do projeto" required>
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" placeholder="Digite a descrição" required></textarea>
+
+      <label for="prazo">Prazo:</label>
+      <input type="date" id="prazo" required>
+
+      <button type="submit" class="btnLogin"><i class="fas fa-plus"></i> Criar Projeto</button>
+    </form>
+  </div>
+
+  <script src="js/projetos.js"></script>
+</body>
+
+</html>

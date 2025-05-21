@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Projetos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <h1>Login</h1>
+    <form class="container" autocomplete="off">
+        <label for="">Usuário:</label>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="" id="usuarioInput" placeholder="Digite seu usuário" required>
+        </div>
+    
+        <label for="">Senha:</label>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="" id="senhaInput" placeholder="Digite sua senha" autocomplete="new-password" required>
+        </div>
+         <div class="esqueceu-senha">
+                <a href="esqueceu.html">Esqueceu a senha?</a>
+            </div>
+    
+        <button type="submit" id="btnLogin" class="btnLogin">Login</button>
+    
+         <div class="social-login">
+            <p>Ou continue com:</p>
+            <div class="social-icons">
+                <a href="#" id="google"><i class="fab fa-google"></i></a>
+                <a href="#" id="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" id="github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="inscrever">
+            <p>Não tem conta? <a href="signUp.html">Cadastre-se</a></p>
+        </div>
+
+    </form>
+    <script src="./js/script.js"></script>
+</body>
+</html>
