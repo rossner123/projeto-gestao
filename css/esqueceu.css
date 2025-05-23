@@ -27,7 +27,6 @@
   
   p {
     color: #ddd;
-    margin-bottom: 20px;
     font-size: 14px;
   }
   
@@ -81,7 +80,6 @@
   }
   
   a {
-    margin-top: 15px;
     color: #FFDE59;
     text-decoration: none;
     display: inline-block;
@@ -90,4 +88,28 @@
   a:hover {
     text-decoration: underline;
   }
+
+  .voltar-login {
+    width: 100%;
+    text-align: center;
+  }
+
+  .voltar-login a {
+    color: #FFDE59;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .voltar-login a i {
+    position: relative;
+    top: 1px;
+  }
+  
+  .voltar-login a:hover {
+    text-decoration: underline;
+  }
+  
+  
   
