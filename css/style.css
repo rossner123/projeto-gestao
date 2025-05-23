@@ -13,7 +13,7 @@ body{
     height: 100vh;
     gap: 15px;
     color: #fff;
-    background-image: url("./images/LOGIN.png");
+    background-image: url("../images/LOGIN.png");
     background-size: cover;
 }
 
