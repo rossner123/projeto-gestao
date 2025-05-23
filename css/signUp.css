@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+    color: #fff;
+    background-image: url("../images/LOGIN.png");
+    background-size: cover;
+  }
+  
+  h1 {
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    background-color: #021229;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+  
+  .container button {
+    width: 100%;
+    border: none;
+    background-color: #FFDE59;
+    color: #021229;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12pt;
+  }
+  
+  .container button:hover {
+    background-color: #ffde59ef;
+    transition: background-color 0.3s;
+  }
+  
+  label {
+    font-size: 12pt;
+  }
+  
+  .grupo-input {
+    position: relative;
+    width: 100%;
+  }
+  
+  .grupo-input i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #FFDE59;
+  }
+  
+  .entrada {
+    width: 100%;
+    border: none;
+    background-color: #0c1b3a;
+    padding: 10px 10px 10px 36px;
+    color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .entrada:focus {
+    outline: 1px solid #FFDE59;
+    background-color: #12264d;
+  }
+  
+  .login-social {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .icones-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .icones-sociais a {
+    color: white;
+    font-size: 1.2em;
+    background-color: #0c1b3a;
+    padding: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10%;
+  }
+  
+  .icones-sociais i {
+    width: 20px;
+  }
+  
+  .icones-sociais a:hover {
+    background-color: #FFDE59;
+    color: #021229;
+    transform: scale(1.1);
+  }
+  
+  .ja-tem-conta {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .ja-tem-conta a {
+    color: #FFDE59;
+    text-decoration: none;
+  }
+  
+  .ja-tem-conta a:hover {
+    text-decoration: underline;
+  }
+  

@@ -10,6 +10,6 @@ form.addEventListener("submit", (event) => {
   } else {
     const usuario = document.getElementById("nome");
     localStorage.setItem("usuario", usuario.value);
-    location.href = "projetos.html";
+    location.href = "index.html";
   }
 });
