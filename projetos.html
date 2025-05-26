@@ -3,66 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestão de Projetos</title>
+  <title>Organizador de Projetos</title>
   <link rel="stylesheet" href="./css/projetos.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Gestão de Projetos</h1>
-
-    <table class="project-table">
-      <thead>
-        <tr>
-          <th>Status</th>
-          <th>Projeto</th>
-          <th>Prazo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="status status-nao-iniciada">● Não iniciada</span></td>
-          <td>
-            <div class="titulo">
-              <p><strong>Publicar meu primeiro livro</strong></p>
-            </div>
-          </td>
-          <td>
-            <div class="data">
-              <p><input type="date" name="" id=""></p>
-            </div>
-          </td>
-        </tr>
-
-        <tr>
-          <td><span class="status status-em-andamento">● Em andamento</span></td>
-          <td>
-            <div class="titulo">
-            <p><strong>Publicar meu primeiro livro</strong></p>
-          </div>
-        </td>
-          <td>
-            <div class="data">
-              <p><input type="date" name="" id=""></p>
-            </div>
-          </td>
-        </tr>
-        
-        <tr>
-          <td><span class="status status-concluido">● Em andamento</span></td>
-          <td>
-            <div class="titulo">
-            <p><strong>Publicar meu primeiro livro</strong></p>
-          </div>
-        </td>
-          <td>
-            <div class="data">
-              <p><input type="date" name="" id=""></p>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="sidebar">
+    <h2>Projetos</h2>
+    <button>📁 Meus Projetos</button>
+    <button>✅ Tarefas Concluídas</button>
+    <button>⚙️ Configurações</button>
+    <button>👤 Perfil</button>
+    <button>🚪 Logout</button>
   </div>
+
+  <div class="container">
+    <h1>Minhas Tarefas</h1>
+
+    <form id="task-form">
+      <input type="text" id="titulo" placeholder="Título da tarefa" required>
+      <select id="status" required>
+        <option value="Pendente">Pendente</option>
+        <option value="Em progresso">Em progresso</option>
+        <option value="Concluído">Concluído</option>
+      </select>
+      <input type="date" id="prazo" required>
+      <input type="color" id="cor" value="#cccccc">
+      <textarea id="subtarefas" placeholder="Sub-tarefas (separadas por vírgula)"></textarea>
+      <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <div class="task-columns">
+      <div class="task-column" data-status="Pendente">
+        <h3>Pendente</h3>
+        <div class="task-list" id="pendente"></div>
+      </div>
+      <div class="task-column" data-status="Em progresso">
+        <h3>Em progresso</h3>
+        <div class="task-list" id="em-progresso"></div>
+      </div>
+      <div class="task-column" data-status="Concluído">
+        <h3>Concluído</h3>
+        <div class="task-list" id="concluido"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">×</span>
+      <h2>Editar Tarefa</h2>
+      <form id="edit-form">
+        <input type="text" id="edit-titulo" required>
+        <select id="edit-status" required>
+          <option value="Pendente">Pendente</option>
+          <option value="Em progresso">Em progresso</option>
+          <option value="Concluído">Concluído</option>
+        </select>
+        <input type="date" id="edit-prazo" required>
+        <input type="color" id="edit-cor">
+        <textarea id="edit-subtarefas"></textarea>
+        <div class="modal-buttons">
+          <button type="submit">Salvar</button>
+          <button type="button" id="cancelEdit">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/projetos.js"></script>
 </body>
 </html>
